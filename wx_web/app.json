@@ -1,0 +1,42 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/works/works",
+    "pages/logs/logs",
+    "pages/profile/profile",
+    "pages/message/message",
+    "pages/scene/scene",
+    "pages/activity/activity",
+    "pages/appointment/appointment",
+    "pages/brand/brand"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ddb83c",
+    "navigationBarTitleText": "我的阳光女孩",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#ddb83c",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/static/home.png",
+        "selectedIconPath": "pages/static/home-active.png"
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "消息中心",
+        "iconPath": "pages/static/message.png",
+        "selectedIconPath": "pages/static/message-active.png"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "个人中心",
+        "iconPath": "pages/static/profile.png",
+        "selectedIconPath": "pages/static/profile-active.png"
+      }
+    ]
+  }
+}

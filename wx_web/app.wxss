@@ -1,0 +1,141 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+/**app.wxss**/
+/*通用功能一:截取过长字符串 ...*/
+.ell{
+  overflow: hidden; /*超出范围隐藏*/
+  white-space: nowrap; /*不允许换行*/
+  text-overflow: ellipsis/*超出部分添加...*/
+}
+/*通用功能二：灰色分隔块*/
+.divider{
+  height:30rpx;
+  background-color:#eee9c9; 
+}
+/*通用功能三：项目条*/
+.cell{
+  background-color: #fff;
+  font-size: 32rpx;
+}
+.cell-item{
+  padding: 20rpx 30rpx;
+  border-bottom: 1rpx solid #ddb83c;
+}
+.cell-item text{
+  width: 200rpx;
+  margin-left:10%;
+  position: absolute;
+  line-height: 48rpx;
+}
+/*通用功能四：个人界面小图片*/
+.last_image-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 46rpx;
+  height:46rpx;
+  float:right;
+  transform: rotate(180deg); 
+}
+.first_image-item{
+  width: 46rpx;
+  height:46rpx;
+
+}
+/*通用功能上部挂件样式*/
+/* pages/works/works.wxss */
+/*主体*/
+page{
+  background-color: #fbefff;
+}
+/*页面头*/
+/* pages/message/message.wxss */
+/*红色图片样式  */
+.Bigheadline{
+  position: absolute;
+  width:100%; 
+  top:0rpx;
+  z-index: 2;
+}
+.Bigheadline image{
+    width: 100%;
+    height: 122rpx;
+}
+/*米色小框样式 */
+#MainNavHome{
+  position: absolute;
+  width: 100%;  
+  top:8rpx;
+  z-index:1;
+}
+#MainNavHome .flexslider-nav {
+    background: url(http://127.0.0.1:3000/img/mainNavBg.png);
+    width: 662rpx;
+    height: 66px;
+    top:236px;
+    margin: 0 42rpx;
+    border-radius: 20rpx;
+}
+/*红色下拉小条  */
+.all_logo{
+   margin-right: 50px;
+}
+.all_logo .logo1,.logo2{
+  width:30px;
+  height: 60px;
+  float: right;
+  margin: 0 10px;
+}
+/* 图片title按钮*/
+.timg{
+  width: 80%;
+  margin-left: 60rpx;
+  margin-top: 40rpx;
+  overflow: hidden;
+  border-top: 1px dashed #beb794;
+  border-bottom: 1px dashed #beb794;
+  padding: 34rpx 10rpx;
+  margin-bottom: 40rpx;
+  display: flex; 
+}
+.timg view {
+    width:100rpx;
+    padding: 16rpx 24rpx 14rpx;
+    font-size: 24rpx;
+    background: url(http://127.0.0.1:3000/img/works/BtnGreenBg.png);
+    border-top: 600rpx; 
+    color:#978560;
+    justify-content:space-between; 
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10rpx;
+    border-radius: 10rpx;
+    margin-left: 24rpx;
+    
+}
+#Kong{
+  height: 240rpx;
+}
+/*阳光女孩图片样式*/
+.smallhead{
+   position: absolute;
+   width: 100%;  
+   top:30rpx;
+   z-index: 12;
+   text-align:center;
+}
+.smallhead text{
+   width: 480rpx;
+   height: 80rpx;
+   font-size:60rpx;
+   font-family: 'STLiti';
+    color:#978560;
+}
